@@ -1,0 +1,7 @@
+# Description:
+#
+# Take 2 strings s1 and s2 including only letters from ato z. Return a new sorted string, the longest possible,
+# containing distinct letters, - each taken only once - coming from s1 or s2.
+
+def longest(str1, str2):
+    return "".join(sorted(list(set(str1 + str2))))
