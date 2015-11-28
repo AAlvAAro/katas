@@ -14,14 +14,14 @@
 # 3 friends go out together: A spends $20, B spends $15, and C spends $10. The function should return an
 # object/dict showing that A should receive $5, B should receive $0, and C should pay $5.
 
-def split_the_bill(group):
-    count = len(group)
+def split_the_bill(x):
+    count = len(x)
     total = 0
 
-    for (k, v) in group.iteritems():
+    for (k, v) in x.iteritems():
         total += v
 
-    for (k, v) in group.iteritems():
-        group[k] = v - (total / count)
+    for (k, v) in x.iteritems():
+        x[k] = v - (total / count)
 
-    return group
+    return x

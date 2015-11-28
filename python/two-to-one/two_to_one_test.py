@@ -11,10 +11,10 @@ class TwoToOneTest(unittest.TestCase):
 
     def test_longest(self):
         cases = [
-            { 'str1': 'xyaabbbccccdefww', 'str2': 'xxxxyyyyabklmopq', 'longest': 'abcdefklmopqwxy'},
-            { 'str1': 'abcdefghijklmnopqrstuvwxyz', 'str2': 'abcdefghijklmnopqrstuvwxyz',
+            { 's1': 'xyaabbbccccdefww', 's2': 'xxxxyyyyabklmopq', 'longest': 'abcdefklmopqwxy'},
+            { 's1': 'abcdefghijklmnopqrstuvwxyz', 's2': 'abcdefghijklmnopqrstuvwxyz',
               'longest': 'abcdefghijklmnopqrstuvwxyz'}
         ]
 
         for case in cases:
-            self.assertEqual(case['longest'], longest(case['str1'], case['str2']))
+            self.assertEqual(case['longest'], longest(case['s1'], case['s2']))
